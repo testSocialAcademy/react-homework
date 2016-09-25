@@ -1,0 +1,23 @@
+{
+  "name": "react-homework",
+  "version": "1.0.0",
+  "description": "Tralala",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server -a localhost -p 8000 -c-1 ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/testSocialAcademy/react-homework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/testSocialAcademy/react-homework/issues"
+  },
+  "homepage": "https://github.com/testSocialAcademy/react-homework.#readme",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  }
+}
