@@ -94,7 +94,8 @@ var Add = React.createClass({
     componentDidMount: function () {
         ReactDOM.findDOMNode(this.refs.author).focus();
     },
-    onBtnClickHandler: function () {
+    onBtnClickHandler: function (e) {
+        e.preventDefault();
         var textEl = ReactDOM.findDOMNode(this.refs.text);
         var author = ReactDOM.findDOMNode(this.refs.author).value;
         var text = textEl.value;
@@ -106,7 +107,6 @@ var Add = React.createClass({
         window.ee.emit('News.add', item);
         textEl.value = '';
         this.setState({textIsEmpty: true});
-        return false;
     },
     onAuthorChange: function (e) {
         if (e.target.value.trim().length > 0) {
